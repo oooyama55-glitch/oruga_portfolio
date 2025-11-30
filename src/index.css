@@ -39,9 +39,7 @@ body {
 
 #root {
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -183,10 +181,8 @@ button.active {
 /* Hero Component */
 .hero-container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 60vh;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
   margin-bottom: 2rem;
   overflow: hidden;
   background-color: #000;

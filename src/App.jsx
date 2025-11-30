@@ -42,21 +42,23 @@ function App() {
   ];
 
   return (
-    <div className="container">
+    <>
       <Hero />
 
-      <Navigation
-        categories={categories}
-        currentCategory={currentCategory}
-        setCategory={setCategory}
-      />
+      <div className="container">
+        <Navigation
+          categories={categories}
+          currentCategory={currentCategory}
+          setCategory={setCategory}
+        />
 
-      <Gallery images={displayedImages} />
+        <Gallery images={displayedImages} />
 
-      <footer style={{ marginTop: '4rem', padding: '2rem', opacity: 0.6, fontSize: '0.9em' }}>
-        &copy; {new Date().getFullYear()} Oruga. All rights reserved.
-      </footer>
-    </div>
+        <footer style={{ marginTop: '4rem', padding: '2rem', opacity: 0.6, fontSize: '0.9em' }}>
+          &copy; {new Date().getFullYear()} Oruga. All rights reserved.
+        </footer>
+      </div>
+    </>
   );
 }
 
